@@ -5,9 +5,7 @@ Created by: Robin Kok
 Class: SwicosC
 Current version: ALPHA 1.0
 
-## Installation Guide
-
-Run the program and enjoy the game.
+## User Guide
 
 You can use your own wordlist by replacing the wordlist.txt file.
 Simply create a new .txt file and put one word on each line.
@@ -81,4 +79,14 @@ ALPHA 1.0 | ADDED LOSING CONDITION
 - Added losing condition when the Hangman hangs
 ```
 
+ALPHA 1.1 | UPDATED README
+
+```bash
+- Updated the README file (check Known Issues)
+```
+
 ## Known Issues
+
+```bash
+- DE2.jar is currently not working (for me)
+```
