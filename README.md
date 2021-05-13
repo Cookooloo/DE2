@@ -39,3 +39,12 @@ PRE-ALPHA 0.3 | BASIC RANDOM WORD PICKER ADDED
 - Added List
 - Added test println
 ```
+
+PRE-ALPHA 0.4 ADDED CHARACTER LIST AND PLAYER INPUT
+
+```bash
+- Added a new List that keeps current word
+- Added system that shows word as correct amount of "-"
+- Added system that takes user input
+- Added system that replaces "-" with guessed letter
+```
