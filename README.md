@@ -3,7 +3,7 @@
 School assignment DE2.
 Created by: Robin Kok
 Class: SwicosC
-Current version: ALPHA 1.0
+Current version: ALPHA 1.2
 
 ## User Guide
 
@@ -83,6 +83,12 @@ ALPHA 1.1 | UPDATED README
 
 ```bash
 - Updated the README file (check Known Issues)
+```
+
+ALPHA 1.2 | REMOVED WORD AT START
+
+```bash
+- Removed the word that has to be guessed at the start
 ```
 
 ## Known Issues

@@ -24,7 +24,7 @@ public class Hangman {
         // word picker that gets one word from the wordlist.txt
         String word = words.get(rand.nextInt(words.size()));
         // test print
-        System.out.println(word);
+        // System.out.println(word);
 
         // List of characters in word
         List<Character> playerGuessses = new ArrayList<>();
