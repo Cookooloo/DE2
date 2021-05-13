@@ -3,7 +3,7 @@
 School assignment DE2.
 Created by: Robin Kok
 Class: SwicosC
-Current version: Alpha 0.1
+Current version: PRE-ALPHA 0.3
 
 ## Patch Notes
 
@@ -14,7 +14,7 @@ Initial commit:
 - Added wordlist to be used by the game.
 ```
 
-ADDED FILES AND DIRECTORIES:
+PRE-ALPHA 0.1 | ADDED FILES AND DIRECTORIES:
 
 ```bash
 Added the following files and directories:
@@ -25,8 +25,17 @@ Added the following files and directories:
   -- Functioneel Ontwerp
   ```
 
-EDITS TO wordlist.txt
+PRE-ALPHA 0.2 | EDITS TO wordlist.txt
 
 ```bash
 - Edited wordlist.txt to make sure words are working and correct.
+```
+
+PRE-ALPHA 0.3 | BASIC RANDOM WORD PICKER ADDED
+
+```bash
+- Added a randomizer
+- Added Scanner for wordlist.txt
+- Added List
+- Added test println
 ```
