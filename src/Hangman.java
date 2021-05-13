@@ -8,21 +8,40 @@ import java.util.Scanner;
 public class Hangman {
     public static void main(String[] args) throws FileNotFoundException {
 
-        // Scanner for wordlist.txt and keystrokes
-        Scanner scanner = new Scanner(new File("wordlist.txt"));
+        // scanner for keystrokes
         Scanner keyboard = new Scanner(System.in);
 
-        // empty list for adding words
-        List<String> words = new ArrayList<>();
-        // adds words to words List
-        while (scanner.hasNext()){
-            words.add(scanner.nextLine());
+        // 1 or 2 player option
+        System.out.println("1 of 2 spelers?");
+        String players = keyboard.nextLine();
+        String word;
+
+        if (players.equals("1")) {
+            // scanner for wordlist.txt and
+            Scanner scanner = new Scanner(new File("wordlist.txt"));
+
+
+            // empty list for adding words
+            List<String> words = new ArrayList<>();
+            // adds words to words List
+            while (scanner.hasNext()){
+                words.add(scanner.nextLine());
+            }
+
+            // Randomizer
+            Random rand = new Random();
+            // word picker that gets one word from the wordlist.txt
+            word = words.get(rand.nextInt(words.size()));
+        }
+        else {
+            System.out.println("Speler 1, voer jouw woord in:");
+            word = keyboard.nextLine();
+            System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+            System.out.println("Speler 2, veel succes!");
         }
 
-        // Randomizer
-        Random rand = new Random();
-        // word picker that gets one word from the wordlist.txt
-        String word = words.get(rand.nextInt(words.size()));
+
+
         // test print
         // System.out.println(word);
 
@@ -38,6 +57,7 @@ public class Hangman {
 
             if (wrongCount >= 6){
                 System.out.println("Helaas, je hebt verloren.");
+                System.out.println("Het woord was: " + word);
                 break;
             }
 
@@ -50,14 +70,14 @@ public class Hangman {
             }
             // if value returns true, stop program
             if (printWordState(word, playerGuessses)) {
-                System.out.println("You Win!");
+                System.out.println("Je hebt gewonnen!");
                 break;
             }
 
             // lets player guess entire word to win early
             System.out.println("Voer jouw gok in:");
             if (keyboard.nextLine().equals(word)) {
-                System.out.println("You Win!");
+                System.out.println("Je hebt gewonnen!");
                 break;
             }
             else {

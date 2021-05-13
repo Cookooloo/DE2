@@ -3,13 +3,14 @@
 School assignment DE2.
 Created by: Robin Kok
 Class: SwicosC
-Current version: ALPHA 1.2
+Current version: ALPHA 1.3
 
 ## User Guide
 
-You can use your own wordlist by replacing the wordlist.txt file.
-Simply create a new .txt file and put one word on each line.
-REMEMBER TO BACK UP THE ORIGINAL FILE.
+You can use your own wordlist by replacing the wordlist.txt file
+You can find the wordlist at /src/wordlist.txt
+Simply create a new .txt file and put one word on each line
+REMEMBER TO BACK UP THE ORIGINAL FILE!
 
 ## Patch Notes
 
@@ -89,6 +90,14 @@ ALPHA 1.2 | REMOVED WORD AT START
 
 ```bash
 - Removed the word that has to be guessed at the start
+```
+
+ALPHA 1.3 | ADDED 2 PLAYER FUNCTION + WORD SHOWS AFTER LOSS
+
+```bash
+- Added the word showing after 6 wrong guesses
+- Added 2 player functionality
+- README_NL added
 ```
 
 ## Known Issues
