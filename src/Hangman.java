@@ -29,12 +29,20 @@ public class Hangman {
         // List of characters in word
         List<Character> playerGuessses = new ArrayList<>();
 
+        int wrongCount = 0;
         // loop that keeps going while player hasn't guessed all words
         while(true) {
+
+            // prints the Hanged Man
+            printHangedMan(wrongCount);
+
             // print letters at correct guessed places, else print -
             printWordState(word, playerGuessses);
+
             // get player input
-            getPlayerGuess(keyboard, word, playerGuessses);
+            if (!getPlayerGuess(keyboard, word, playerGuessses)) {
+                wrongCount++;
+            }
             // if value returns true, stop program
             if (printWordState(word, playerGuessses)) {
                 System.out.println("You Win!");
@@ -53,12 +61,45 @@ public class Hangman {
         }
     }
 
+    private static void printHangedMan(int wrongCount) {
+        System.out.println(" -------");
+        System.out.println(" |     |");
+        if (wrongCount >= 1) {
+            System.out.println(" O");
+        }
 
-    private static void getPlayerGuess(Scanner keyboard, String word, List<Character> playerGuessses) {
+        if (wrongCount >= 2) {
+            System.out.print("\\ ");
+            if (wrongCount >= 3) {
+                System.out.println("/");
+            }
+        }
+
+        if (wrongCount >= 4) {
+            System.out.println(" |");
+        }
+
+        if (wrongCount >= 5) {
+            System.out.print("/ ");
+            if (wrongCount >= 6) {
+                System.out.println("\\");
+            }
+            else {
+                System.out.println("");
+            }
+        }
+        System.out.println();
+        System.out.println();
+    }
+
+
+    private static boolean getPlayerGuess(Scanner keyboard, String word, List<Character> playerGuessses) {
         System.out.println("Voer een letter in:");
         // System to prevent cheating. Only take the first letter of typed string
         String letterGuess = keyboard.nextLine();
         playerGuessses.add(letterGuess.charAt(0));
+
+        return word.contains(letterGuess);
     }
 
     private static boolean printWordState(String word, List<Character> playerGuessses) {

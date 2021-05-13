@@ -3,7 +3,7 @@
 School assignment DE2.
 Created by: Robin Kok
 Class: SwicosC
-Current version: PRE-ALPHA 0.6
+Current version: PRE-ALPHA 0.7
 
 ## Patch Notes
 
@@ -40,7 +40,7 @@ PRE-ALPHA 0.3 | BASIC RANDOM WORD PICKER ADDED
 - Added test println
 ```
 
-PRE-ALPHA 0.4 ADDED CHARACTER LIST AND PLAYER INPUT
+PRE-ALPHA 0.4 | ADDED CHARACTER LIST AND PLAYER INPUT
 
 ```bash
 - Added a new List that keeps current word
@@ -49,14 +49,20 @@ PRE-ALPHA 0.4 ADDED CHARACTER LIST AND PLAYER INPUT
 - Added system that replaces "-" with guessed letter
 ```
 
-PRE-ALPHA 0.5 ADDED LOOP FOR PLAYER GUESS
+PRE-ALPHA 0.5 | ADDED LOOP FOR PLAYER GUESS
 
 ```bash
 - Added a loop that keeps track of player guesses
 ```
 
-PRE-ALPHA 0.6 ADDED ALTERNATIVE WAY TO WIN
+PRE-ALPHA 0.6 | ADDED ALTERNATIVE WAY TO WIN
 
 ```bash
 - Added system that lets player guess the entire word with each guess
+```
+
+PRE-ALPHA 0.7 | ADDED PRINTED HANGMAN
+
+```bash
+- Added system that prints the Hangman on wrong guesses
 ```
