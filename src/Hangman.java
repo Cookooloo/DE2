@@ -36,6 +36,11 @@ public class Hangman {
             // prints the Hanged Man
             printHangedMan(wrongCount);
 
+            if (wrongCount >= 6){
+                System.out.println("Helaas, je hebt verloren.");
+                break;
+            }
+
             // print letters at correct guessed places, else print -
             printWordState(word, playerGuessses);
 

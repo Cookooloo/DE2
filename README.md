@@ -3,7 +3,15 @@
 School assignment DE2.
 Created by: Robin Kok
 Class: SwicosC
-Current version: PRE-ALPHA 0.7
+Current version: ALPHA 1.0
+
+## Installation Guide
+
+Run the program and enjoy the game.
+
+You can use your own wordlist by replacing the wordlist.txt file.
+Simply create a new .txt file and put one word on each line.
+REMEMBER TO BACK UP THE ORIGINAL FILE.
 
 ## Patch Notes
 
@@ -66,3 +74,11 @@ PRE-ALPHA 0.7 | ADDED PRINTED HANGMAN
 ```bash
 - Added system that prints the Hangman on wrong guesses
 ```
+
+ALPHA 1.0 | ADDED LOSING CONDITION
+
+```bash
+- Added losing condition when the Hangman hangs
+```
+
+## Known Issues
