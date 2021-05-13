@@ -3,7 +3,7 @@
 School assignment DE2.
 Created by: Robin Kok
 Class: SwicosC
-Current version: PRE-ALPHA 0.3
+Current version: PRE-ALPHA 0.6
 
 ## Patch Notes
 
@@ -53,4 +53,10 @@ PRE-ALPHA 0.5 ADDED LOOP FOR PLAYER GUESS
 
 ```bash
 - Added a loop that keeps track of player guesses
+```
+
+PRE-ALPHA 0.6 ADDED ALTERNATIVE WAY TO WIN
+
+```bash
+- Added system that lets player guess the entire word with each guess
 ```

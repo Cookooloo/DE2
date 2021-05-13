@@ -29,23 +29,29 @@ public class Hangman {
         // List of characters in word
         List<Character> playerGuessses = new ArrayList<>();
 
-        // print letters at correct guessed places, else print -
-        printWordState(word, playerGuessses);
-
         // loop that keeps going while player hasn't guessed all words
         while(true) {
+            // print letters at correct guessed places, else print -
+            printWordState(word, playerGuessses);
             // get player input
             getPlayerGuess(keyboard, word, playerGuessses);
             // if value returns true, stop program
             if (printWordState(word, playerGuessses)) {
+                System.out.println("You Win!");
                 break;
             }
+
+            // lets player guess entire word to win early
+            System.out.println("Voer jouw gok in:");
+            if (keyboard.nextLine().equals(word)) {
+                System.out.println("You Win!");
+                break;
+            }
+            else {
+                System.out.println("Helaas, probeer opnieuw!");
+            }
         }
-        // message when player guessed all words
-        System.out.println("You Win!");
     }
-
-
 
 
     private static void getPlayerGuess(Scanner keyboard, String word, List<Character> playerGuessses) {
