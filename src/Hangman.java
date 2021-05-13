@@ -32,8 +32,17 @@ public class Hangman {
         // print letters at correct guessed places, else print -
         printWordState(word, playerGuessses);
 
-        getPlayerGuess(keyboard, word, playerGuessses);
-
+        // loop that keeps going while player hasn't guessed all words
+        while(true) {
+            // get player input
+            getPlayerGuess(keyboard, word, playerGuessses);
+            // if value returns true, stop program
+            if (printWordState(word, playerGuessses)) {
+                break;
+            }
+        }
+        // message when player guessed all words
+        System.out.println("You Win!");
     }
 
 
@@ -44,19 +53,21 @@ public class Hangman {
         // System to prevent cheating. Only take the first letter of typed string
         String letterGuess = keyboard.nextLine();
         playerGuessses.add(letterGuess.charAt(0));
-
-        printWordState(word, playerGuessses);
     }
 
-    private static void printWordState(String word, List<Character> playerGuessses) {
+    private static boolean printWordState(String word, List<Character> playerGuessses) {
+        int correctCount = 0;
         for (int i = 0; i < word.length(); i++) {
             if (playerGuessses.contains(word.charAt(i))) {
                 System.out.print(word.charAt(i));
+                correctCount++;
             }
             else {
                 System.out.print("-");
             }
         }
         System.out.println();
+
+        return (word.length() == correctCount);
     }
 }

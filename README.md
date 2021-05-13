@@ -48,3 +48,9 @@ PRE-ALPHA 0.4 ADDED CHARACTER LIST AND PLAYER INPUT
 - Added system that takes user input
 - Added system that replaces "-" with guessed letter
 ```
+
+PRE-ALPHA 0.5 ADDED LOOP FOR PLAYER GUESS
+
+```bash
+- Added a loop that keeps track of player guesses
+```
